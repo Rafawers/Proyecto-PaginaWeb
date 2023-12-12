@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Imagenes/Playa10.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh; 
+    position: relative; 
+}
+
+nav {
+    background-color: #42da45;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td.actions {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    padding: 0px 0px; 
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer i.bi {
+    color: #fff;
+    font-size: 20px; 
+    margin-right: 15px;
+}
+

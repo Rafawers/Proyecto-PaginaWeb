@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="./Public/css/galeria.css">
+</head>
+<body>
+    <nav>
+        <h2>Galería</h2>
+    </nav>
+    <div class="container gallery-container">
+        <div class="tz-gallery">
+    
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <a class="lightbo" href="./Public/Imagenes/Acapul.png">
+                        <img src="./Public/Imagenes/AcapulcoPrin.png" alt="Park">
+                    
+                    </a>                    
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <a class="lightbox" href="./Public/Imagenes/Cancu.png">
+                        <img src="./Public/Imagenes/cancunprin.png" alt="Bridge">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <a class="lightbox" href="./Public/Imagenes/Mazatl.png">
+                        <img src="./Public/Imagenes/mazapri.png" alt="Tunnel">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <a class="lightbox" href="./Public/Imagenes/sayul.png">
+                        <img src="./Public/Imagenes/zayuprin.png" alt="Coast">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <a class="lightbox" href="./Public/Imagenes/Camp.png">
+                        <img src="./Public/Imagenes/Samu.jpg" alt="Park">
+                    </a>
+                </div>
+               
+            </div>
+    
+        </div>
+    
+    </div>
+    <footer>
+        <div class="container">
+          <i class="bi bi-beach"></i>
+          <p>&copy; 2023 Cleanin Beaches. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var params = new URLSearchParams(window.location.search);
+            var imageIndex = params.get('imagen');
+
+            if (imageIndex !== null) {
+                baguetteBox.run('.tz-gallery', {
+                    startIndex: parseInt(imageIndex),
+                });
+            }
+        });
+    </script>
+</body>
+</html>
